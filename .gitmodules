@@ -1,0 +1,30 @@
+[submodule "Felix"]
+	path = Felix
+	url = https://github.com/felixweihs/TidyData
+[submodule "Lauren"]
+	path = Lauren
+	url = https://github.com/lnjwilliamson86/Project_Summary_Markdown_Lauren
+[submodule "Rmarkdown-summary-of-hendra-microRNAs"]
+	path = Rmarkdown-summary-of-hendra-microRNAs
+	url = https://github.com/Marina0729/Rmarkdown-summary-of-hendra-microRNAs
+[submodule "Marina"]
+	path = Marina
+	url = https://github.com/Marina0729/Rmarkdown-summary-of-hendra-microRNAs
+[submodule "Andreas"]
+	path = Andreas
+	url = https://github.com/duesi999/Job-skills
+[submodule "Franzis"]
+	path = Franzis
+	url = https://github.com/FranzisGIT/DataSchool_output
+[submodule "Gilbert"]
+	path = Gilbert
+	url = https://github.com/GilbertP68/markdown_project
+[submodule "Chloe"]
+	path = Chloe
+	url = https://github.com/ChloePlet/FOCUS_markdown
+[submodule "Yuzi"]
+	path = Yuzi
+	url = https://github.com/Yuzi-00/my_data
+[submodule "NatC"]
+	path = NatC
+	url = https://github.com/col381/Markdown_Nat
