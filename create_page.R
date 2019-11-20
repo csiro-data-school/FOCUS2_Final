@@ -18,8 +18,18 @@ make_tile <- function(path) {
     rvest::html_nodes("img") %>% 
     discard(map(., ~rvest::html_attr(., "class")) == "photo")
   
-  #For now, just pick first non-photo image in html file
-  pic <- pic_options[[1]] %>% rvest::html_attr("src")
+  is_frontpage <- pic_options %>% 
+    rvest::html_attr("frontpage") %>% 
+    is.na() %>% 
+    not()
+  
+  #If no tagged frontpage image, just pick first non-photo image in html file
+  if (any(is_frontpage)) {
+    pic <- pic_options[is_frontpage] %>% rvest::html_attr("src")
+  } else {
+    pic <- pic_options[[1]] %>% rvest::html_attr("src")
+  }
+  
   
   intro <- display_page %>% 
     rvest::html_node("#introduction") %>% 

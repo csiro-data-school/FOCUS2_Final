@@ -4,9 +4,6 @@
 [submodule "Lauren"]
 	path = Lauren
 	url = https://github.com/lnjwilliamson86/Project_Summary_Markdown_Lauren
-[submodule "Rmarkdown-summary-of-hendra-microRNAs"]
-	path = Rmarkdown-summary-of-hendra-microRNAs
-	url = https://github.com/Marina0729/Rmarkdown-summary-of-hendra-microRNAs
 [submodule "Marina"]
 	path = Marina
 	url = https://github.com/Marina0729/Rmarkdown-summary-of-hendra-microRNAs
