@@ -7,6 +7,7 @@
 [submodule "Marina"]
 	path = Marina
 	url = https://github.com/Marina0729/Rmarkdown-summary-of-hendra-microRNAs
+	branch = origin
 [submodule "Andreas"]
 	path = Andreas
 	url = https://github.com/duesi999/Job-skills
