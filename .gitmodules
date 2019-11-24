@@ -26,3 +26,6 @@
 [submodule "NatC"]
 	path = NatC
 	url = https://github.com/col381/Markdown_Nat
+[submodule "Mandy"]
+	path = Mandy
+	url = https://github.com/Mandy-MY/Hazard_project
