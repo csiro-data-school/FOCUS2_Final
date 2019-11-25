@@ -29,3 +29,6 @@
 [submodule "Mandy"]
 	path = Mandy
 	url = https://github.com/Mandy-MY/Hazard_project
+[submodule "Doug"]
+	path = Doug
+	url = https://github.com/Bigblu003/Rmarkdown_assignment.git
