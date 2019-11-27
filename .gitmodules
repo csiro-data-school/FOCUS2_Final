@@ -35,3 +35,6 @@
 [submodule "Doug"]
 	path = Doug
 	url = https://github.com/Bigblu003/Rmarkdown_assignment.git
+[submodule "Melania"]
+	path = Melania
+	url = https://github.com/CropImmunity/Report.git
