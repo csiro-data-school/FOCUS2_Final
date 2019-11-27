@@ -38,3 +38,6 @@
 [submodule "Melania"]
 	path = Melania
 	url = https://github.com/CropImmunity/Report.git
+[submodule "Jen"]
+	path = Jen
+	url = https://github.com/JenGiles/JGilesMarkdown.git
