@@ -1,6 +1,7 @@
 library(glue)
 library(purrr)
 library(magrittr)
+library(stringr)
 
 files = list.files(pattern = ".Rmd", recursive = T)
 
@@ -30,6 +31,9 @@ make_tile <- function(path) {
     pic <- pic_options[[1]] %>% rvest::html_attr("src")
   }
   
+  if(str_detect(path, "Doug")) {
+    pic <- str_remove(pic, "resources/")
+  }
   
   intro <- display_page %>% 
     rvest::html_node("#introduction") %>% 
