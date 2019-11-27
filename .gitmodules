@@ -29,3 +29,12 @@
 [submodule "Mandy"]
 	path = Mandy
 	url = https://github.com/Mandy-MY/Hazard_project
+[submodule "NatM"]
+	path = NatM
+	url = https://github.com/natmali/Natalia_FOCUS_Project.git
+[submodule "Jasjeet"]
+	path = Jasjeet
+	url = https://github.com/Jasjeet17/JasjeetMarkdown.git
+[submodule "Doug"]
+	path = Doug
+	url = https://github.com/Bigblu003/Rmarkdown_assignment.git
