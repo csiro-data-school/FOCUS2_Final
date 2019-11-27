@@ -11,7 +11,7 @@ make_tile <- function(path) {
   
   link <- stringr::str_replace(path, "\\.Rmd", ".html")
   
-  if(str_detect(path, "Steve")) {
+  if(str_detect(path, "Steve|Caroline")) {
     link <- str_replace_all(link, " ", "-")
   }
   
