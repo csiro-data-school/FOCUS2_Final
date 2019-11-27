@@ -44,3 +44,6 @@
 [submodule "Dong"]
 	path = Dong
 	url = https://github.com/che161/NT_Houses.git
+[submodule "Omar"]
+	path = Omar
+	url = https://github.com/omporras/rmarkdown_omar.git
