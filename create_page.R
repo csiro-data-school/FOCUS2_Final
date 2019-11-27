@@ -3,7 +3,7 @@ library(purrr)
 library(magrittr)
 library(stringr)
 
-files = list.files(pattern = ".Rmd", recursive = T)
+files = list.files(pattern = ".Rmd$", recursive = T)
 
 make_tile <- function(path) {
   
@@ -29,6 +29,8 @@ make_tile <- function(path) {
     is.na() %>% 
     not()
   
+  
+  
   #If no tagged frontpage image, just pick first non-photo image in html file
   if (any(is_frontpage)) {
     pic <- pic_options[is_frontpage] %>% rvest::html_attr("src")
@@ -36,8 +38,10 @@ make_tile <- function(path) {
     pic <- pic_options[[1]] %>% rvest::html_attr("src")
   }
   
-  if(str_detect(path, "Doug")) {
-    pic <- str_remove(pic, "resources/")
+  headshot <- glue::glue("{dirname(path)}/{yaml$photo}")
+  
+  if (str_detect(path, "Doug")) {
+    headshot <- str_remove(headshot, "resources/")
   }
   
   intro <- display_page %>% 
@@ -52,7 +56,7 @@ make_tile <- function(path) {
           <h4 class="card-title">
             <a href="{link}" target="_blank">{yaml$author}</a>
             <a href="{path}" target="_blank" title="See the raw code"><i class="far fa-file-code"></i></a>
-            <img class="headshot" src="{dirname(path)}/{yaml$photo}" style="object-position: 50% 60%">
+            <img class="headshot" src="{headshot}" style="object-position: 50% 60%">
           </h4>
           <p class="card-text">{yaml$title}<hr/> <small>{intro}</small></p>
         </div>
