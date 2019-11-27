@@ -56,3 +56,6 @@
 [submodule "Theresa"]
 	path = Theresa
 	url = https://github.com/TheresaStoll/markdown_theresa.git
+[submodule "Ming"]
+	path = Ming
+	url = https://github.com/mwangmodelling/markdown_poster.git
