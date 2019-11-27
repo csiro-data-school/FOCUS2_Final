@@ -50,3 +50,6 @@
 [submodule "Steve"]
 	path = Steve
 	url = https://github.com/Hendo9999/Grapevine_markdown.git
+[submodule "Caroline"]
+	path = Caroline
+	url = https://github.com/carolineannesutton/Sutton-Project-Summary.git
