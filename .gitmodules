@@ -53,3 +53,6 @@
 [submodule "Caroline"]
 	path = Caroline
 	url = https://github.com/carolineannesutton/Sutton-Project-Summary.git
+[submodule "Theresa"]
+	path = Theresa
+	url = https://github.com/TheresaStoll/markdown_theresa.git
