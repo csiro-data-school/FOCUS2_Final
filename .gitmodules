@@ -47,3 +47,6 @@
 [submodule "Omar"]
 	path = Omar
 	url = https://github.com/omporras/rmarkdown_omar.git
+[submodule "Steve"]
+	path = Steve
+	url = https://github.com/Hendo9999/Grapevine_markdown.git
