@@ -1,0 +1,98 @@
+---
+title: Analytics & Decision Sciences Program
+subtitle: Monthly Financial Summary
+author:  Nathalie Colgrave
+affiliation: CSIRO Finance - Data61 # Or group/team
+photo: resources/img/logo.png
+
+short_title: Optional short title
+
+output: DSreport::project_summary
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  results = 'asis',
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = 'center'
+)
+
+#Load libraries
+library(tidyverse)
+library(gapminder)
+library(kableExtra)
+```
+
+
+# Introduction
+My name is *Nathalie Colgrave*.  I work in Finance supporting CSIRO Data61. Data School was my introduction to coding.  Prior to Data School, monthly reports were compiled via manipulation in excel through cell referencing as well as usuage of functions such as vlookup.
+
+# My Project
+
+My project, **Financial Reportincg**, involves saving data downloaded from the SAP system as a CSV file into RStudio. Through coding,  R allows for the manipulation of a large data frame to extract financial summaries.  We are also able to create lower level reports allowing the user to drill down to project level to see what makes up the summary.  There are various users that reference the report at different levels.  The program director refers to the highest summary level.  The group and initiative leaders reference the report at initiative/group and project level.  
+
+
+## Preliminary results
+
+
+```{r}
+table <-  read.csv('../MarkdownTable.csv')
+```
+
+**Tables**
+```{r mytable, out.width='100%', echo = F}
+knitr::kable(head(table, n = 9), format = "html", caption = "External Revenue by Initiative") %>% 
+  kable_styling("striped")
+```
+
+**Images from a file**
+
+![](resources/img/tidyverse.png){width=100px}
+
+```{r}
+transaction <-  read.csv('../transaction.csv')
+```
+
+**Plots from R**
+```{r standard-plot, out.width='60%', fig.align='center', fig.height= 4, fig.width=6, fig.cap="Yet another gapminder plot"}
+transaction %>% 
+  filter(Cost_Name == "Domestic") %>% 
+  ggplot(aes(x = Period, y = Amount, colour = Cluster)) +
+  geom_point() 
+  
+```
+
+
+# My Digital Toolbox
+
+
+Digital Toolbox introduced to and applied have included:
+
+R - dplyr, ggplot.
+
+Introduction to Shiny has triggered some thinking about applying the interactive tool into  monthly reporting via use of buttons to select various categories.
+
+## Favourite tool
+
+The ability to summarise financial information via running script has and will continue to have a significant impact on my role.  
+
+Although I didn't get to a stage of presenting useful graphs at this point, what I did learn in data school puts me in a position to further work on building informative visuals in the short to medium term.  This includes using slack, bit bucket and git hub as tools.  Not just R.
+
+![](https://raw.githubusercontent.com/tidyverse/ggplot2/master/man/figures/logo.png){.pull-right width=100px}
+
+No prizes for guessing mine:
+
+# My time went ...
+
+Tidying data as well as problem solving were the two areas that took the most time.  The process of problem solving introduced me to new highs and lows with the buzz of "getting in" and the frustration of finishing the session not having "worked it out"
+
+# Next steps
+
+I look forward to further build on the monthly finance report.  I would be keen to further explore "Shiny".  I have been thinking of volunteering as a helper.  Although my skills are ok as opposed to very good, I would promote the attitude that success is about your ability to be brave and expose what you don't know which is part of the process of getting help.  Succeeding is heavily reliant on working with others as well as persistent and committment.
+
+# My Data School Experience
+
+I have enjoyed: being exposed to a new challenge and meeting a bunch of really nice, dedicated group of people.  I have already applied the skills I have learned in data school with allocation reports, pulling out proposals in O2D as well as the monthly financial summary.
+
+
